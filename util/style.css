@@ -1,0 +1,1158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+/* CSS Document For Demo Estate Agency*/
+
+/* ------------------------------------------*/
+/* -------->>> CSS FOR MAIN SITE <<<---------*/
+/* ------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    /*font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";*/
+}
+
+body {
+    position: relative;
+    min-width: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------------------------*/
+/* -------->>> CSS FOR NAVIGATION BAR <<<---------*/
+/* -----------------------------------------------*/
+nav {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 2px 0 5px;
+    height: 70px;
+    align-items: center;
+}
+
+.nav-links .active {
+    color: #749DA3;
+}
+
+.logo img {
+    margin: 10px 100px;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #616161;
+    letter-spacing: 0.3em;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 0 30px;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #58DEDE;
+    transition: width .3s;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+.toggle-btn {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* -----------------------------------------------*/
+/* -------->>> CSS FOR FOOTER BAR <<<---------*/
+/* -----------------------------------------------*/
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    background-color: #4F616B;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 40px;
+}
+
+.box {
+    border-right: 1px solid darkgray;
+    padding: 10px 0px;
+}
+
+.box ul {
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.box ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+}
+
+.box img {
+    align-items: center;
+    justify-content: center
+}
+
+.box ul li a:hover {
+    opacity: 0.5;
+}
+
+.footer-copyright {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    padding-bottom: 10px;
+}
+
+/* -----------------------------------------------*/
+/* -------->>> CSS FOR HEADER ELEMENT <<<---------*/
+/* -----------------------------------------------*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    float: right;
+    width: 13%;
+    z-index: 1;
+    top: 50px;
+    right: 20px;
+    background-color: #251F2D;
+    border-top: 2px solid #fff;
+}
+
+header address {
+
+    padding: 15px 15px 0px;
+}
+
+header address p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.telephone {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ------------------------------------------*/
+/* -------->>> CSS FOR HOME PAGE <<<---------*/
+/* ------------------------------------------*/
+.backdrop img {
+    width: 100%;
+    height: 84vh;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.valuation {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #251F2D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    top: -4px;
+}
+
+.valuation input[type=submit] {
+    width: 90px !important;
+}
+
+.valuation p {
+    color: #4F616B;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+}
+
+#name {
+    overflow: hidden;
+    width: 20%;
+    box-sizing: border-box;
+    height: 5px;
+    border: 1px solid black;
+    background-color: #fafafa;
+    font-size: 12px;
+    padding: 15px 15px;
+    margin: 8px 5px 10px 5px;
+}
+
+#email {
+    overflow: hidden;
+    width: 20%;
+    box-sizing: border-box;
+    height: 5px;
+    border: 1px solid black;
+    background-color: #fafafa;
+    font-size: 12px;
+    padding: 15px 15px;
+    margin: 8px 5px 10px 5px;
+}
+
+#request {
+    width: 5%;
+    float: center;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 12px;
+    color: #000;
+    background: linear-gradient(45deg, #51a1ba 50%, #fff 50%);
+    margin-bottom: 20px;
+    border: none;
+}
+
+#request:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #51a1ba 50%, #fff 50%);
+    z-index: -1;
+}
+
+#request, #request:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+#request:hover, #request:hover:after {
+    background-position: 0;
+}
+
+.promoListing {
+    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+    margin-top: 5%;
+}
+
+.promoListing h2 {
+    margin: 5%;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+#flex-box, #home-flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+    flex-direction: column;
+    justify-content: space-around;
+    column-gap: 60px;
+    row-gap: 60px;
+    width: 55%;
+    margin-bottom: 5%;
+}
+
+.polaroid {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-bottom: 10px solid #4F616B;
+}
+
+.polaroid img {
+    width: 100%;
+}
+
+.polaroid img:hover {
+    opacity: 0.9;
+}
+
+.container {
+    padding: 0px 10px 10px;
+}
+
+.container p {
+    text-align: left;
+    color: #000;
+    font-size: 12px;
+}
+
+.container p a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4F616B;
+    letter-spacing: normal;
+}
+
+.container .detailing {
+    letter-spacing: 0.2em;
+    color: darkgray;
+}
+
+.container .pricing {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.container .infoing {
+    border-top: 1px solid #F0F0F0;
+    letter-spacing: 0.05em;
+    padding-top: 10px;
+}
+
+.load-more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.load-more-btn input {
+    width: 100px !important;
+}
+
+
+@media screen and (max-width: 480px) {
+    .backdrop img {
+        width: 100%;
+    }
+}
+
+/* -----------------------------------------------*/
+/* ---------->>> CSS FOR ABOUT PAGE <<<-----------*/
+/* -----------------------------------------------*/
+.about {
+    display: flex;
+    height: 100vh;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.about-right {
+    flex: 1;
+    position: relative;
+}
+
+.about-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.about-title h2 {
+    font-size: 40px;
+    font-weight: 100;
+    width: 80%;
+    color: #241F2B;
+}
+
+.about-title span {
+    color: #739CA3;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about-us {
+    color: #8C8C8C;
+}
+
+.about-us span {
+    color: #739CA3;
+}
+
+.approved {
+    margin-top: 40px;
+}
+
+.approved img {
+    width: 33vw;
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        flex-direction: column;
+        height: 170vh;
+    }
+
+    .about-left-wrapper {
+        padding: 55px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .about-title {
+        text-align: left;
+        width: 180vw;
+    }
+
+    .about-us {
+        font-size: 20px;
+        text-align: left;
+        width: 180vw;
+    }
+
+    .approved img {
+        width: 190vw;
+    }
+}
+
+/* -----------------------------------------------*/
+/* ---------->>> CSS FOR SEARCH PAGE <<<----------*/
+/* -----------------------------------------------*/
+.total {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.total p {
+    color: #cacaca;
+    padding-left: 6%;
+    letter-spacing: 0;
+    font-size: 18px;
+}
+
+/* ------------------------------------------------------*/
+/* ------->>> CSS FOR PROPERTIES/SEARCH PAGE <<<---------*/
+/* ------------------------------------------------------*/
+.propertySearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #251F2D;
+    width: 89%;
+    padding: 40px;
+}
+
+
+.propTitle {
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    background-color: #251F2D;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.propTitle p {
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+}
+
+.alert {
+    display: none;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+.alert p {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchpg {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.search-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-left-wrapper {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+
+.search-title {
+    font-size: 40px;
+    font-weight: 300;
+    width: 100%;
+    color: #241F2B;
+}
+
+.search-title span {
+    color: #739CA3;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.search-desc {
+    width: 80%;
+    color: #8C8C8C;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.searchimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.search-right {
+    flex: 1;
+    position: relative;
+}
+
+.search-feature {
+    background: linear-gradient(135deg, #DBEEF3 30%, #fff);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.search-feature input[type=submit] {
+    width: 100px !important;
+}
+
+.search-options {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    row-gap: 20px;
+}
+
+.price-range-label {
+    color: rgb(81, 161, 186) !important;
+}
+
+#price {
+    border: 1px solid #9EDFE4 !important;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 206px !important;
+    font-size: 16px;
+}
+
+#tenure {
+    color: #DAF5FA !important;
+    background-color: #3EB8D1;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#slider-range {
+    width: 206px !important;
+}
+
+.search-price-btn {
+    display: grid;
+    grid-template-columns: auto;
+    flex-direction: column;
+    row-gap: 20px;
+    align-content: normal;
+    align-items: normal;
+    justify-content: start;
+    justify-items: start;
+    margin: 20px 0px 20px;
+}
+
+.ui-selectmenu-button.ui-button {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #9EDFE4;
+    width: 206px !important;
+}
+
+.ui-selectmenu-icon.ui-icon {
+    color: #DAF5FA;
+}
+
+.ui-selectmenu-button.ui-button:focus {
+    background-color: #9EDFE4;
+    color: #FFF;
+}
+
+.ui-widget.ui-widget-content {
+    width: 206px !important;
+    border: 1px solid #9EDFE4 !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    background-color: #9EDFE4 !important;
+    border: 1px solid #9EDFE4 !important;
+    color: #FFF !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    border: 1px solid #9EDFE4 !important;
+}
+
+
+@media screen and (max-width: 550px) {
+    .searchimg {
+        width: 47vw;
+        height: 170vh;
+    }
+
+    .searchpg {
+        height: 170vh;
+    }
+}
+
+
+/* ----------------------------------------------*/
+/* -------->>> CSS FOR DEMO PROPERTY <<<---------*/
+/* ----------------------------------------------*/
+
+.prop {
+    display: flex;
+    height: 100vh;
+}
+
+.prop-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.prop-right {
+    flex: 1;
+    position: relative;
+}
+
+.prop-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.prop-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.prop-title {
+    font-size: 35px;
+    font-weight: 100;
+    width: 100%;
+    color: #241F2B;
+}
+
+.prop-desc {
+    color: #8C8C8C;
+}
+
+.prop-desc span {
+    color: #739CA3;
+}
+
+.property-details {
+    color: #241F2B;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    justify-content: start;
+    justify-items: start;
+}
+
+@media screen and (max-width: 480px) {
+
+    .col {
+        display: grid;
+        grid-template-columns: repeat(2, 95vw);
+    }
+
+    .prop {
+        flex-direction: column;
+    }
+
+    .prop-left {
+        justify-content: flex-start;
+    }
+
+    .prop-left-wrapper {
+        padding: 55px;
+        align-items: left;
+        justify-content: left;
+        text-align: center;
+        height: 100%;
+    }
+
+    .prop-title {
+        text-align: left;
+        width: 180vw;
+    }
+
+    .prop-desc {
+        font-size: 20px;
+        text-align: left;
+        width: 180vw;
+    }
+
+    .prop-img {
+        height: 40vh;
+    }
+
+    .prop-right {
+        height: 40vh;
+        overflow: hidden;
+    }
+}
+
+
+
+/* ---------------------------------------------*/
+/* -------->>> CSS FOR CONTACT PAGE <<<---------*/
+/* ---------------------------------------------*/
+.contact {
+    display: flex;
+    height: 100vh;
+}
+
+.contact-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.contact-right {
+    flex: 1;
+    position: relative;
+}
+
+.contact-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.contact-desc h2 {
+    font-size: 40px;
+    color: #241F2B;
+    font-weight: 100;
+    width: 58%;
+    margin-bottom: 10px;
+}
+
+.contactInfo {
+    display: grid;
+    grid-template-columns: auto;
+    flex-direction: column;
+    justify-content: left;
+    width: 57%;
+    row-gap: 8px;
+}
+
+.contactInfo p {
+    margin: 0px;
+    color: #8C8C8C;
+    font-weight: 400;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: #b3b2b2;
+}
+
+
+.contactbtns {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-left-wrapper {
+        padding: 55px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .contact-desc h2 {
+        width: 100vw;
+    }
+
+    .contact {
+        height: 200vh;
+    }
+}
+
+/* ---------------------------------------------*/
+/* -------->>> CSS FOR CONTACT FORM <<<---------*/
+/* ---------------------------------------------*/
+
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: none;
+    color: #739CA3;
+}
+
+#contactform {
+    border: none;
+    right: 100%;
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15%;
+}
+
+#cfirstName {
+    overflow: hidden;
+    width: 39%;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 20px 20px;
+    margin: 8px 8px 15px 0px;
+    border: 1px solid #3EB8D1 !important;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#csurname {
+    overflow: hidden;
+    width: 39%;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 20px 20px;
+    margin: 8px 8px 15px 0px;
+    border: 1px solid #3EB8D1 !important;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#csubject {
+    overflow: hidden;
+    width: 80%;
+    box-sizing: border-box;
+    height: 35px;
+    border: 1px solid #3EB8D1 !important;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin: 15px 0px 15px 0px;
+}
+
+#cemail {
+    overflow: hidden;
+    width: 80%;
+    box-sizing: border-box;
+    height: 35px;
+    border: 1px solid #3EB8D1 !important;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin: 15px 0px 15px 0px;
+}
+
+input[type=textarea] {
+    width: 80%;
+    height: 60px;
+    box-sizing: border-box;
+    height: 35px;
+    border: 1px solid #3EB8D1 !important;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin: 15px 0px 15px 0px;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+}
+
+input[type=textarea]:focus {
+    box-shadow: inset 0px 0px 7px #DCDCDC;
+    height: 100px;
+}
+
+input[type=reset] {
+    width: 15%;
+    float: center;
+    height: 35px;
+    border: none;
+    border-bottom: 4px solid #a0c0c5;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(45deg, #fafafa 50%, #a0c0c5 50%);
+}
+
+input[type=reset]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: linear-gradient(45deg, #fafafa 50%, #a0c0c5 50%);
+    z-index: -1;
+}
+
+input[type=reset], input[type=reset]:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+input[type=reset]:hover, input[type=reset]:hover:after {
+    background-position: 0;
+    color: #739CA3;
+}
+
+input[type=submit] {
+    width: 15%;
+    float: center;
+    height: 35px;
+    border: none;
+    border-bottom: 4px solid #739CA3;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    background: linear-gradient(45deg, #fafafa 50%, #739CA3 50%);
+}
+
+input[type=submit]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #fafafa 50%, #739CA3 50%);
+    z-index: -1;
+}
+
+input[type=submit], input[type=submit]:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+input[type=submit]:hover, input[type=submit]:hover:after {
+    background-position: 0;
+    color: #739CA3;
+}
+
+/* -----------------------------------------------*/
+/* -------->>> CSS FOR MEDIA QUERIES <<<----------*/
+/* -----------------------------------------------*/
+@media only screen and (max-width: 1280px) and (min-width: 300px) {
+    .brand-title {
+        text-align: center;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 1;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #E8F1F5;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 70px;
+    }
+
+
+    .homebanner {
+        width: 40%;
+        top: 39%;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        column-gap: 20px;
+    }
+
+    .box {
+        border-bottom: 1px solid darkgray;
+        border-right: 0px;
+    }
+
+    header {
+        width: 17%;
+    }
+
+    header address p {
+        font-size: 10px;
+    }
+}

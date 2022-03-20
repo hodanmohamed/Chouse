@@ -1,0 +1,128 @@
+ [
+		{
+			"id": "prop1",
+			"property": "House",
+			"bedrooms": 3,
+			"bathrooms": 2,
+			"price": 650000,
+			"tenure": "Freehold",
+			"featured": true,
+			"description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory.",
+			"location": "Petts Wood Road, Petts Wood, Orpington, BR6",
+			"picture": "/properties/prop1pic1.jpg",
+			"url": "properties/prop1.html",
+			"added": {
+				"month": "March",
+				"day": 12,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop2",
+			"property": "Flat",
+			"bedrooms": 2,
+			"bathrooms": 1,
+			"price": 299995,
+			"tenure": "Freehold",
+			"featured": false,
+			"description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. ",
+			"location": "Crofton Road, Orpington, BR6",
+			"picture": "/properties/prop2pic1.jpg",
+			"url": "properties/prop2.html",
+			"added": {
+				"month": "September",
+				"day": 14,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop3",
+			"property": "Flat",
+			"bedrooms": 3,
+			"bathrooms": 2,
+			"price": 137500,
+			"tenure": "Leasehold",
+			"featured": false,
+			"description": "Arranged on the raised ground floor this stunning three bedroom apartment boasts a spectacular kitchen/reception room, three generous bedrooms with an en suite to the master and a large private balcony.",
+			"location": "Ebony Cresent, East Barnet, EN4",
+			"picture": "/properties/prop3pic1.jpg",
+			"url": "properties/prop3.html",
+			"added": {
+				"month": "October",
+				"day": 1,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop4",
+			"property": "Flat",
+			"bedrooms": 1,
+			"bathrooms": 1,
+			"price": 525000,
+			"tenure": "Leasehold",
+			"featured": true,
+			"description": "A spacious one bedroom ground floor flat located in the heart of the Alphabet Streets and within close proximity to the River Thames. The property has scope to be renovated and extended subject to consent.",
+			"location": "Ebony Cresent, East Barnet, EN4",
+			"picture": "/properties/prop4pic1.jpg",
+			"url": "properties/prop4.html",
+			"added": {
+				"month": "April",
+				"day": 4,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop5",
+			"property": "House",
+			"bedrooms": 4,
+			"bathrooms": 3,
+			"price": 500000,
+			"tenure": "Freehold",
+			"featured": false,
+			"description": "This elegant property ticks all of the boxes. The reception room is bright, and spacious. The modern kitchen, you will find fitted units where you will find access into the rear garden and two modern kitchens.",
+			"location": "Humberstone Road, London, E13",
+			"picture": "/properties/prop5pic1.jpg",
+			"url": "properties/prop5.html",
+			"added": {
+				"month": "October",
+				"day": 16,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop6",
+			"property": "House",
+			"bedrooms": 2,
+			"bathrooms": 2,
+			"price": 400000,
+			"tenure": "Freehold",
+			"featured": false,
+			"description": "Short let. Set within a gated development this excellent two bedroom ground floor flat offers ample living space with two double bedrooms, one en suite, modern kitchen and private courtyard.",
+			"location": "Elland Close, New Barnet, EN5",
+			"picture": "/properties/prop6pic1.jpg",
+			"url": "properties/prop6.html",
+			"added": {
+				"month": "January",
+				"day": 4,
+				"year": 2018
+			}
+		},
+		{
+			"id": "prop7",
+			"property": "Flat",
+			"bedrooms": "Studio",
+			"bathrooms": 1,
+			"price": 325000,
+			"tenure": "Freehold",
+			"featured": true,
+			"description": "Short let. Set within a gated development this excellent two bedroom ground floor flat offers ample living space with two double bedrooms, one en suite, modern kitchen and private courtyard.",
+			"location": "Elland Close, New Barnet, EN5",
+			"picture": "/properties/prop7pic1.jpg",
+			"url": "properties/prop7.html",
+			"added": {
+				"month": "August",
+				"day": 16,
+				"year": 2018
+			}
+		}
+	]

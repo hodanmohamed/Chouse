@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/util/style.css">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Search | CHOUSE ESTATES</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="/assets/logo.jpg" width="" height="35" alt=""></a>
+        </div>
+
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="search.html" class="active">SEARCH</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--MAIN CONTENT-->
+    <!--SEARCH FEATURE-->
+    <div class="searchpg">
+        <div class="search-left">
+            <div class="search-left-wrapper">
+                <h1 class="search-title">Let's find the <span>perfect home</span> for you and your family.</h1>
+                <p class="search-desc">Browse through the different real estate properties available for sale. Find the
+                    best deals available in the market</p>
+
+                <div class="search-feature">
+                    <div class="search-options">
+                        <select name="tenure" id="tenure" required>
+                            <option value="tenure" disabled selected="selected">Property Ownership</option>
+                            <option value="Any">Any</option>
+                            <option value="Freehold">Freehold</option>
+                            <option value="Leasehold">Leasehold</option>
+                        </select>
+
+                        <select name="property" id="property" required>
+                            <option value="property" disabled selected="selected">Property Type</option>
+                            <option value="Any">Any</option>
+                            <option value="House">House</option>
+                            <option value="Flat">Flat / Apartments</option>
+                        </select>
+
+                        <select name="added" id="added" required>
+                            <option value="added" disabled selected="selected">Added to Site</option>
+                            <option value="Any">Anytime</option>
+                            <option value="1">Last 24 hrs</option>
+                            <option value="2">Last 3 days</option>
+                            <option value="3">Last 7 days</option>
+                            <option value="4">Last 14 days</option>
+                        </select>
+
+                        <select name="bedrooms" id="bedrooms" required>
+                            <option value="bedrooms" disabled selected="selected">No. of Bedrooms</option>
+                            <option value="Any">Any</option>
+                            <option value="Studio">Studio</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                        <select name="bathrooms" id="bathrooms" required>
+                            <option value="bedrooms" disabled selected="selected">No. of Bathrooms</option>
+                            <option value="Any">Any</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="search-price-btn">
+                        <input type="text" id="price" readonly="">
+                        <div id="slider-range" style="width:250px"></div>
+
+                    </div>
+                    <input type="submit" value="SEARCH" id="search">
+
+                  <!--  <button id="search">Search Properties</button>-->
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    <p id="alertmsg">Please Select All Fields</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="search-right">
+            <div class="search-bg"></div>
+            <img src="/assets/searchpgimg.jpg" alt="" srcset="" class="searchimg">
+        </div>
+    </div>
+    </div>
+
+    <!--RESULTS SECTION-->
+    <div id="results">
+        <div class="aboutTitle">
+            <p style="margin-top: 40px;margin-bottom: 20px;" id="results-title"></p>
+        </div>
+
+        <!--RESULTS DISPLAY OF LISTINGS-->
+        <div class="promoListing" id="list">
+            <div class="total">
+                <p><span id="numOfProperties">0</span> Found</p>
+            </div>
+            <div class="cards" id="flex-box">
+                <!--results displayed here-->
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-grid">
+            <div class="box a"><img src="/assets/logo-footer.png" width="70" alt="" /></div>
+            <div class="box b">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                </ul>
+            </div>
+            <div class="box c">
+                <ul>
+                    <li><a href="#">FOR SALES</a></li>
+                    <li><a href="#">HOMES</a></li>
+                    <li><a href="#">APARTMENTS</a></li>
+                </ul>
+            </div>
+            <div class="box d">
+                <ul>
+                    <li><a href="#">TERMS OF USE</a></li>
+                    <li><a href="#">PRIVACY</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">&copy; COPYRIGHT 2018 <span style="color: #749DA3">CHOUSE</span>. ALL RIGHTS
+            RESERVED.
+        </div>
+    </footer>
+
+    <script src="/util/property.json"></script>
+    <script src="/util/application.js"></script>
+    <script src="/util/script.js"></script>
+</body>
+
+</html>
