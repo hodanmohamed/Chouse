@@ -3,4 +3,4 @@
 - Designed & Developed in 2018
 - View site [Demo](https://chouseestates.netlify.app/).
 
-![download](https://user-images.githubusercontent.com/100366164/159204642-ef24dae5-1737-4ce9-89d4-c226a666ac64.png)
+![download](![Uploading screencapture-127-0-0-1-5500-index-html-2022-04-30-02_28_39.png…])
